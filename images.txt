@@ -1,7 +1,7 @@
 #支持私库
 # k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #支持指定架构, 需要在images.txt中用 --platform=xxxxx手动指定镜像架构 指定后的架构会以前缀的形式放在镜像名字前面
-# --platform=linux/arm64 linux/amd64
+# --platform=linux/amd64 linux/arm64
 
 # aliyun的, 我放在 action-image 这个命名空间下, 固定: 12....
 # 拉取镜像是 docker pull registry.cn-hangzhou.aliyuncs.com/action-image/xxx
@@ -9,10 +9,12 @@
 # ################################历史配置#######################################
 
 # jdk https://hub.docker.com/_/eclipse-temurin/tags?name=17&page=2
+# 拉取方式是 docker pull registry.cn-hangzhou.aliyuncs.com/action-image/eclipse-temurin:17.0.16_8-jdk
+# 如果是指定架构那就是 linux_amd64_eclipse-temurin:17.0.16_8-jdk
 # eclipse-temurin:17.0.16_8-jdk
 
 
 # ################################开始配置#######################################
 
+eclipse-temurin:17.0.16_8-jdk --platform=linux/amd64
 
-eclipse-temurin:17.0.16_8-jdk
