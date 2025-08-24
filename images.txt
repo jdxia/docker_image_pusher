@@ -6,6 +6,9 @@
 # aliyun的, 我放在 action-image 这个命名空间下, 固定: 12....
 # 拉取镜像是 docker pull registry.cn-hangzhou.aliyuncs.com/action-image/xxx
 
+# 查看docker镜像的架构
+# docker image inspect registry.cn-hangzhou.aliyuncs.com/action-image/eclipse-temurin:17.0.16_8-jdk | grep Architecture
+
 # ################################历史配置#######################################
 
 # jdk https://hub.docker.com/_/eclipse-temurin/tags?name=17&page=2
@@ -19,5 +22,5 @@
 
 # ################################开始配置#######################################
 
---platform=linux/amd64 eclipse-temurin:17.0.16_8-jdk
+
 
