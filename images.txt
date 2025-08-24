@@ -13,8 +13,11 @@
 # 如果是指定架构那就是 linux_amd64_eclipse-temurin:17.0.16_8-jdk
 # eclipse-temurin:17.0.16_8-jdk
 
+# 指定架构需要在前面写
+# --platform=linux/amd64 eclipse-temurin:17.0.16_8-jdk
+
 
 # ################################开始配置#######################################
 
-eclipse-temurin:17.0.16_8-jdk --platform=linux/amd64
+--platform=linux/amd64 eclipse-temurin:17.0.16_8-jdk
 
