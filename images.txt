@@ -19,10 +19,10 @@
 # 指定架构需要在前面写
 # --platform=linux/amd64 eclipse-temurin:17.0.16_8-jdk
 
+# 测试: docker pull registry.cn-hangzhou.aliyuncs.com/action-image/linux_amd64_eclipse-temurin:17.0.16_8-jdk
+
 
 # ################################开始配置#######################################
-
---platform=linux/amd64 emqx/emqx:5.8.6
 
 
 
